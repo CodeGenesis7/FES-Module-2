@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">               
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
  <section>
     <nav>   
-        <img src="./assets/FES.svg" alt="">
+        <img src="./assets/FES.svg" class="logo" alt="Frontend Simplified logo">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#discord">Discord</a></li>
@@ -20,9 +20,10 @@
         </ul>
     </nav>
     <header>
-        <div>
+        <div class="row">
+            <div>
             <h1>Best place to learn frontend</h1>
-            <p>Go from being an absolute beginner to pro with a simplified process</p>
+            <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
             <button>Start now</button>
         </div>
         <figure>
@@ -34,23 +35,30 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati veniam laboriosam aut nesciunt quas beatae quia, nihil fugit blanditiis cum provident reiciendis consectetur, in tempore eligendi. Voluptate, reiciendis eum.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati veniam laboriosam aut nesciunt quas beatae quia, nihil fugit blanditiis cum provident reiciendis consectetur, in tempore eligendi. Voluptate, reiciendis eum.</p>
+            <div class="row">
+                <div class="section_description">   
+                    <div class="section_description--wrapper">
+                        <p class="section_description--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati veniam laboriosam aut nesciunt quas beatae quia, nihil fugit blanditiis cum provident reiciendis consectetur, in tempore eligendi. Voluptate, reiciendis eum.</p>
+                        <p class="section_description--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati veniam laboriosam aut nesciunt quas beatae quia, nihil fugit blanditiis cum provident reiciendis consectetur, in tempore eligendi. Voluptate, reiciendis eum.</p>
+                    </div>
+                    <figure class="about_img--wrapper">
+                        <img src="./assets/about.jpg" alt="About page image">
+                    </figure>
+                </div>
             </div>
-            <figure>
-                <img src="./assets/about.jpg" alt="About page image">
-            </figure>
         </section>
 
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="Discord">
-            </figure>
-            <div>   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <div class="row">
+                <div class="section_description">
+                    <figure class="about_img--wrapper">
+                        <img src="./assets/discord.png" alt="Discord">
+                    </figure>
+                    <div class="section_description--wrapper">   
+                        <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                        <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
             </div>
         </section>
 
@@ -58,21 +66,21 @@
             <h2>Contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
                 <span>Message</span>
-                <textarea type="message" placeholder="Nice website, let's connect!"></textarea>
-                <button type="submit">Submit</button>
+                <textarea type="Message" placeholder="Nice website, let's connect!"></textarea>
+                <button type="Contact Us">Contact Us!</button>
             </form>
         </section>
     </main>
     
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>      
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer_logo" src="./assets/FES.svg" alt="">
+        <div class="footer_links">
+            <a class="footer_links" href="#about">About</a>
+            <a class="footer_links" href="#discord">Discord</a>      
+            <a class="footer_links" href="#contact">Contact</a>
+            <a class="footer_links" href="">Courses</a>
         </div>
         <p>© 2024 Frontend Simplified. All rights reserved.</p>
     </footer>
